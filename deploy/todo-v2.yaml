@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
       - name: todo
-        image: haraldu/todo-app:latest
+        image: saikumar21/todo-app:latest
         ports:
         - containerPort: 3000
         env:
         - name: MYSQL_PASSWORD
-          value: secret
+          value: password
         - name: MYSQL_DB
           value: todos
         - name: MYSQL_HOST
